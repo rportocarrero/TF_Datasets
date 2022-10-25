@@ -1,5 +1,5 @@
 import tensorflow as tf
-import tensorflow_datasets as tfds
+import tensorflow-datasets as tfds
 
 print(tf.__version__)
 
