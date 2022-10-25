@@ -8,8 +8,7 @@
 
 module purge
 module load anaconda
-conda activate /curc/sw/anaconda3/2019.03/envs/idp 
-pip install tensorflow_datasets
+conda activate TF_Datasets
 
 echo "== Start job =="
 python3 places365_small_load.py
