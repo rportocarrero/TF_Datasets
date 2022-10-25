@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --time=00:10:00
+#SBATCH --partition=amilan
+#SBATCH --output=sample-%j.out
+
+module purge
+module load anaconda
+conda activate /curc/sw/anaconda3/2019.03/envs/idp 
+
+echo "== Start job =="
+python3 places365_small_load.py
+echo " == End Job =="
